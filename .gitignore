@@ -1,0 +1,9 @@
+# Environment
+.env
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+.venv/
