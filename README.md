@@ -17,3 +17,39 @@ Create a `.env` file in repo root:
 WEBHOOK_URL=https://webhook.skunkscrape.com/events
 PROXIES=http://user:password@proxy1:8080
 HLR_API=https://api.hlrlookup.com/hlr?msisdn={number}&apikey=YOUR_KEY
+```
+
+## ▶️ Usage
+Install deps:
+
+```bash
+Copy code
+pip install -r requirements.txt
+Run validation:
+```
+```bash
+Copy code
+python scripts/validate_numbers.py
+```
+Run scrape:
+
+```bash
+Copy code
+python scripts/scrape_runner.py
+```
+
+---
+
+## 📄 .gitignore
+
+```gitignore
+# Environment
+.env
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+```
